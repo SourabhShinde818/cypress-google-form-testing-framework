@@ -4,11 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+       "test:googleform_firefox":"npx cypress run --browser firefox --spec cypress/integration/googleFormSubmission_Test.cy.js",
+    
+      "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
+      "test:googleform_chrome":"npx cypress run --browser chrome --spec cypress/integration/googleFormSubmission_Test.cy.js"
+      
+
+    
+
+    
   },
-  "author": "",
+  "repository": {
+    "type":"git",
+    "url": "git+https://github.com/SourabhShinde818/cypress-testing-framework.git"
+  },
+  "author": "Sourabh",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.10.0"
+    "cypress": "^13.10.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3"
   }
 }
