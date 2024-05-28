@@ -4,18 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-       "test:googleform_firefox":"npx cypress run --browser firefox --spec cypress/integration/googleFormSubmission_Test.cy.js",
-    
-      "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
-      "test:googleform_chrome":"npx cypress run --browser chrome --spec cypress/integration/googleFormSubmission_Test.cy.js"
-      
-
-    
-
-    
+    "test:googleform_firefox": "npx cypress run --browser firefox --spec cypress/integration/googleFormSubmission_Test.cy.js",
+    "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
+    "test:googleform_chrome": "npx cypress run --browser chrome --spec cypress/integration/googleFormSubmission_Test.cy.js"
   },
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "git+https://github.com/SourabhShinde818/cypress-testing-framework.git"
   },
   "author": "Sourabh",
@@ -23,6 +17,8 @@
   "devDependencies": {
     "cypress": "^13.10.0",
     "cypress-mochawesome-reporter": "^3.8.2",
+    "glob": "^10.4.1",
+    "inflight": "^1.0.6",
     "mochawesome": "^7.1.3"
   }
 }
