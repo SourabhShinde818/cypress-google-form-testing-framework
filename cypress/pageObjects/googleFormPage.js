@@ -14,7 +14,7 @@ export class googleFormPage{
     
    
     openURl(){
-        cy.visit(Cypress.env('URL'))
+        cy.visit(Cypress.env('URL')+"/forms/d/e/1FAIpQLScPfEbpaoUu3WVwSDM9wIFX5uo1XQ1xpuHNtP7cF_rkR-o8Zg/viewform")
     }
     enterName(Name){
         cy.get(this.NameInput).type(Name)
