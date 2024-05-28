@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "npx cypress run",
     "test:headtest": "npx cypress run --headed",
     "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
@@ -13,6 +14,21 @@
     "test:googleform_headtest_chrome": "npx cypress run --browser chrome --headed --spec cypress/integration/googleFormSubmission_Test.cy.js",
     "test:googleform_headtest_firefox": "npx cypress run --browser firefox --headed --spec cypress/integration/googleFormSubmission_Test.cy.js",
     "test:googleform_headtest_Edge": "npx cypress run --browser edge --headed --spec cypress/integration/googleFormSubmission_Test.cy.js"
+=======
+       
+  "build": "webpack --config webpack.config.js",
+
+
+       "test:googleform_firefox":"npx cypress run --browser firefox --spec cypress/integration/googleFormSubmission_Test.cy.js",
+    
+      "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
+      "test:googleform_chrome":"npx cypress run --browser chrome --spec cypress/integration/googleFormSubmission_Test.cy.js"
+      
+
+    
+
+    
+>>>>>>> 9159aea310ea924570fc8608236ac2ea18e2c827
   },
   "repository": {
     "type": "git",
