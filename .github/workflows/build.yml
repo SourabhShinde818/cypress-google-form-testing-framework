@@ -1,4 +1,4 @@
-name: Cypress Google form submission Tests
+name: Cypress Googleform submission Tests
 
 on: [push, pull_request]
 
