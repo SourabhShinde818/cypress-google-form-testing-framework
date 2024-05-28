@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+       
+  "build": "webpack --config webpack.config.js"
+
+
        "test:googleform_firefox":"npx cypress run --browser firefox --spec cypress/integration/googleFormSubmission_Test.cy.js",
     
       "test:googleform": "npx cypress run --spec cypress/integration/googleFormSubmission_Test.cy.js",
