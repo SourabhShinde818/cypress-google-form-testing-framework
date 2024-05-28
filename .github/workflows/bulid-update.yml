@@ -1,4 +1,4 @@
-name: main
+name: google form test headless e2e
 on: [push]
 jobs:
   cypress-run:
@@ -9,7 +9,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          
-          
           spec: "cypress/integration/googleFormSubmission_Test.cy.js"
         
