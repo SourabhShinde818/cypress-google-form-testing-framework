@@ -1,25 +1,17 @@
-name: Run Cypress tests google form submission
-
-on:
-  push:
-    branches:
-      - main  # Run on push to the main branch
-
+name: main
+on: [push]
 jobs:
-  cypress-tests:
+  cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Cypress tests
-        run: npm run test
-      - name: Add executable permissions
-        run: chmod +x ./node_modules/.bin/cypress
-
-      - name: Run Cypress tests
-        run: ./node_modules/.bin/cypress run
-        
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm run serve
+          wait-on: http://localhost:8080/
+          
+          spec: "cypress/integration/googleFormSubmission_Test.cy.js"
+        env:
+          CYPRESS_baseUrl: http://localhost:8080/
