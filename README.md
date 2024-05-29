@@ -1,6 +1,4 @@
-
-
-Google Form Test Automation Framework using framework (Cypress)
+Automation Framework
 
 ## Features of framework
 
