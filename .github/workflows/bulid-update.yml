@@ -1,4 +1,4 @@
-name: google form test headless e2e
+name: google form test 
 on: [push]
 jobs:
   cypress-run:
