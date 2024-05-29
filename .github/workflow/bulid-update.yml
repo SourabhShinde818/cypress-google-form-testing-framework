@@ -1,4 +1,4 @@
-name: google form test 
+name: google form test automation
 on: [push]
 jobs:
   cypress-run:
