@@ -86,8 +86,8 @@ Make sure you have the following dependencies installed:
 - You can install Mochawesome and its dependencies using npm:
    - npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
 - This particular code we have to write in cypress/config.js to run Mochawesome-Html-Report
-       - reporter:"cypress-mochawesome-reporter"   
-       -  require('cypress-mochawesome-reporter/plugin')(on)
+   - reporter:"cypress-mochawesome-reporter"   
+   - require('cypress-mochawesome-reporter/plugin')(on)
 
   
 
