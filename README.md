@@ -32,8 +32,7 @@ Make sure you have the following dependencies installed:
    - firefox-build-test.yml: run test on github using firefox browser.
    - edge-build-test.yml: rub test on github using edge browser.
 9. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
-10.  Run the tests using one of the available commands:
-   
+10. Run the tests using one of the available commands:
    - Run tests in headless mode: 'npm run test'
    - Run tests in interactive mode for a specific spec: ` npm run test -- --spec cypress/Integration/googleFormSubimssion_Test.cy.js --headed`
    - Run test in interaction mode 'npm run test:headtest'
