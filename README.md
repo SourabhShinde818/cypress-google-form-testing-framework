@@ -39,17 +39,22 @@ Make sure you have the following dependencies installed:
 
 ## Configuration
 
--  cypress.config.json`: Cypress configuration file containing various settings for test execution.
+-  cypress.config.js`:
+     - Cypress configuration file containing various settings for test execution.
+     - he cypress.config.js file is used to configure settings for the Cypress test runner. It allows you to customize various aspects of your Cypress tests, such as the browser to use, the base URL of your 
+       application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
+                      -
 - `cypress/support/commands.js`: Custom commands and global configurations for Cypress.
 - `cypress/support/e2e.js`: Cypress e2e configuration file.
 
-## Mochawesome Report
+## Mochawesome HTML Report
 - Mochawesome is a custom reporter for Mocha that generates detailed and visually appealing HTML reports for your test results
 - You can install Mochawesome and its dependencies using npm:
    - npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
 - This particular code we have to write in cypress/config.js to run Mochawesome-Html-Report
        - reporter:"cypress-mochawesome-reporter"
        -setupNodeEvents(on, config) {
-        require('cypress-mochawesome-reporter/plugin')(on)
-    },
+       - require('cypress-mochawesome-reporter/plugin')(on)
+        - },
+
 
