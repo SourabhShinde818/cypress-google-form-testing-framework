@@ -1,7 +1,6 @@
 Automation Framework
 
-## Features of framework
-
+##Cypres-Mocha Framework
 
 ##Features of Cypress-Mocha Framework
 - Mocha Test Runner: Mocha is a flexible and feature-rich JavaScript test framework that provides a clear and comprehensive interface for writing test cases and suites.
@@ -78,7 +77,6 @@ Make sure you have the following dependencies installed:
      - Screenshots and Videos : Cypress can capture screenshots and videos during test runs, which are typically saved in the cypress/screenshots and cypress/videos directories, respectively.
      - Report Folder : By using Mochawesome-html-reporter we create standard report. it directly stores into a report folder
      - .github folder: created Yml files to run scprit on github.
-
 
 
 ## Mochawesome HTML Report
