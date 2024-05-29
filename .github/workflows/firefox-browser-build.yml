@@ -12,3 +12,9 @@ jobs:
           spec: "cypress/integration/googleFormSubmission_Test.cy.js"
 
           browser : firefox
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v3
+        with:
+            name: Mochawesome HTML Report
+            path: cypress/reports/html
+          
