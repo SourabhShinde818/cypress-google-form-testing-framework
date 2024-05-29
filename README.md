@@ -6,14 +6,14 @@ Google Form Test Automation Framework using framework (Cypress)
 
 
 ##Features of Cypress-Mocha Framework
--The combination of Cypress with Mocha provides a robust testing framework for web applications, offering a range of features that make testing easier and more efficient. Here are the key features of the Cypress-Mocha framework:
--Mocha Test Runner: Mocha is a flexible and feature-rich JavaScript test framework that provides a clear and comprehensive interface for writing test cases and suites.
--Describe and It Blocks: Mocha uses describe and it blocks to organize tests into logical groups and define individual test cases, making it easy to manage and understand test suites.
--Hooks: Mocha provides before, after, beforeEach, and afterEach hooks that allow you to set up and tear down test environments, ensuring tests run in a clean state.
--Assertions: Mocha does not include its own assertion library, so you can use any assertion library of your choice (e.g., Chai, Should.js, Expect.js) to perform assertions in your tests.
--Async Support: Mocha provides support for testing asynchronous code using callbacks, promises, or async/await syntax, making it easy to write tests for modern asynchronous web applications.
--Reporters: Mocha supports multiple reporters that can generate test reports in various formats. allowing you to choose the format that best suits your needs.
--Extensibility: Both Cypress and Mocha are highly extensible frameworks, allowing you to customize and extend their functionality to meet your specific testing requirements.
+- The combination of Cypress with Mocha provides a robust testing framework for web applications, offering a range of features that make testing easier and more efficient. Here are the key features of the Cypress-Mocha framework:
+- Mocha Test Runner: Mocha is a flexible and feature-rich JavaScript test framework that provides a clear and comprehensive interface for writing test cases and suites.
+- Describe and It Blocks: Mocha uses describe and it blocks to organize tests into logical groups and define individual test cases, making it easy to manage and understand test suites.
+- Hooks: Mocha provides before, after, beforeEach, and afterEach hooks that allow you to set up and tear down test environments, ensuring tests run in a clean state.
+- Assertions: Mocha does not include its own assertion library, so you can use any assertion library of your choice (e.g., Chai, Should.js, Expect.js) to perform assertions in your tests.
+- Async Support: Mocha provides support for testing asynchronous code using callbacks, promises, or async/await syntax, making it easy to write tests for modern asynchronous web applications.
+- Reporters: Mocha supports multiple reporters that can generate test reports in various formats. allowing you to choose the format that best suits your needs.
+- Extensibility: Both Cypress and Mocha are highly extensible frameworks, allowing you to customize and extend their functionality to meet your specific testing requirements.
 
 ## Prerequisites
 
