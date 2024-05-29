@@ -44,4 +44,12 @@ Make sure you have the following dependencies installed:
 - `cypress/support/e2e.js`: Cypress e2e configuration file.
 
 ## Mochawesome Report
--
+- Mochawesome is a custom reporter for Mocha that generates detailed and visually appealing HTML reports for your test results
+- You can install Mochawesome and its dependencies using npm:
+   - npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
+- This particular code we have to write in cypress/config.js to run Mochawesome-Html-Report
+       - reporter:"cypress-mochawesome-reporter"
+       -setupNodeEvents(on, config) {
+        require('cypress-mochawesome-reporter/plugin')(on)
+    },
+
