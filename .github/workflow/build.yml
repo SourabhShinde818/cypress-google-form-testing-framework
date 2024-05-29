@@ -1,0 +1,17 @@
+name: google form test 
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:    
+          spec: "cypress/integration/googleFormSubmission_Test.cy.js"
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: Mochawesome HTML Report
+          path: cypress/reports/html
