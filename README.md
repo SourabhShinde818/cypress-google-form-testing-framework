@@ -1,4 +1,4 @@
-cypress Automation Framework
+Automation Framework
 
 ## Features of framework
 
