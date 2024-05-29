@@ -1,6 +1,4 @@
 import { locators } from "../../configfile/config"
-
-
 export class googleFormPage{
 
     openURl(){
