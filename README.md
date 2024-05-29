@@ -30,8 +30,10 @@ Make sure you have the following dependencies installed:
 6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
 7. create yaml file to run our script in github repository (remote)
 8. Run the tests using one of the available commands:
-   - beacause of configuration in Package.json we can run test in this format.
-   -there are various command as below:
+9. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
+   
+
+   
    
    - Run tests in headless mode: 'npm run test'
    - Run tests in interactive mode for a specific spec: ` npm run test -- --spec cypress/Integration/googleFormSubimssion_Test.cy.js --headed`
@@ -54,7 +56,7 @@ Make sure you have the following dependencies installed:
 
 -  cypress.config.js`:
      - Cypress configuration file containing various settings for test execution.
-     - he cypress.config.js file is used to configure settings for the Cypress test runner. It allows you to customize various aspects of your Cypress tests, such as the browser to use, the base URL of your 
+     - The cypress.config.js file is used to configure settings for the Cypress test runner. It allows you to customize various aspects of your Cypress tests, such as the browser to use, the base URL of your 
        application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
                       -
 - `cypress/support/commands.js`:
