@@ -1,4 +1,4 @@
-name: google form chrome browser test 
+name: google form chrome browser test build
 on: [push]
 jobs:
   cypress-run:
