@@ -26,8 +26,10 @@ Make sure you have the following dependencies installed:
 4. Configure your test steps by creating .cy.js files in the 'cypress/integration/' directory using mocha framework.
 5. Implement page object in the 'cypress/pageObjects' directory.
 6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
-7. create yaml file to run our script in github repository (remote)
-   - build-test.yml: run test on github with default browser
+7. create yaml file to run our script on github repository (remote)
+   - build-test.yml: run test on github using default browser
+   - chorme-build-test.yml: run test on github using chrome browser
+   - firefox-build-test.yml: rub test on github using firefox browser
    - 
 9. Run the tests using one of the available commands:
 10. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
