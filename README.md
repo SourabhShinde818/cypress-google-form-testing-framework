@@ -45,6 +45,11 @@ Make sure you have the following dependencies installed:
    - Run test in interactive mode for chrome browser(specfic spec):'npm run test:googleform_headtest_chrome'
    - Run test in interactive mode for firefox browser(specfic spec):'npm run test:googleform_headtest_firefox'
    - Run test in interactive mode for edge browser(specfic spec):'npm run test:googleform_headtest_Edge'
+
+## Page Object Model
+   - The Page Object Model (POM) is a design pattern in test automation that separates the UI elements of a web application from the test code. 
+   - It enhances code readability, reusability, and maintainability by encapsulating interactions with web pages into separate classes called Page Objects.
+   - This pattern promotes cleaner test code and easier maintenance as applications evolve.
      
 
 ## Configuration
@@ -65,10 +70,15 @@ Make sure you have the following dependencies installed:
       -e2e.js in the cypress/support directory is a common naming convention for a file that centralizes e2e testing configurations and utilities for Cypress tests, but its exact purpose and content can vary 
        based on the specific needs of your project.
 
+  ## In a Cypress framework that uses Mocha as the test runner, the folder structure typically follows a common pattern. Here's a basic overview:
 
-
-
-
+     - Integration Tests Folder: This is where your actual test files are located. By default, Cypress looks for these files in the cypress/integration directory.
+     - Support Folder: The cypress/support directory contains support files for your tests, such as custom commands (commands.js) and global configuration (e2e.js)
+     - Configuration File: The cypress.config.js file at the root of your project is used to configure Cypress settings.
+     - Fixture Folder: If you need to use fixtures (test data for your tests), you can place them in the cypress/fixtures directory.
+     - Screenshots and Videos : Cypress can capture screenshots and videos during test runs, which are typically saved in the cypress/screenshots and cypress/videos directories, respectively.
+     - Report Folder : By using Mochawesome-html-reporter we create standard report. it directly stores into a report folder
+     - .github folder: created Yml files to run scprit on github.
 
 
 
@@ -77,9 +87,9 @@ Make sure you have the following dependencies installed:
 - You can install Mochawesome and its dependencies using npm:
    - npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
 - This particular code we have to write in cypress/config.js to run Mochawesome-Html-Report
-       - reporter:"cypress-mochawesome-reporter"
-       -setupNodeEvents(on, config) {
+       - reporter:"cypress-mochawesome-reporter"   
        - require('cypress-mochawesome-reporter/plugin')(on)
-        - },
+
+  
 
 
