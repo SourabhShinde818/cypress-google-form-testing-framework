@@ -45,9 +45,9 @@ Make sure you have the following dependencies installed:
      - Run test in interactive mode for edge browser(specfic spec):'npm run test:googleform_headtest_Edge'
 
 ## Page Object Model
-    - The Page Object Model (POM) is a design pattern in test automation that separates the UI elements of a web application from the test code. 
-    - It enhances code readability, reusability, and maintainability by encapsulating interactions with web pages into separate classes called Page Objects.
-    - This pattern promotes cleaner test code and easier maintenance as applications evolve.
+  - The Page Object Model (POM) is a design pattern in test automation that separates the UI elements of a web application from the test code. 
+  - It enhances code readability, reusability, and maintainability by encapsulating interactions with web pages into separate classes called Page Objects.
+  - This pattern promotes cleaner test code and easier maintenance as applications evolve.
      
 ## Configuration
 -  cypress.config.js:
