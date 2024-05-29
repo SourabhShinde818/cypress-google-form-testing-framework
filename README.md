@@ -24,9 +24,10 @@ Make sure you have the following dependencies installed:
 2. Navigate to the project directory.
 3. Install the project dependencies by running the command: `npm install`
 4. Configure your test steps by creating .cy.js files in the 'cypress/integration/' directory using mocha framework.
-5. Implement page object in the 'cypress/pageObjects' directory.
-6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
-7. create yaml file to run our script on github repository (remote).
+5. Created config.js file to storing locators in a central configuration file can make it easier to update them across your tests if they change, as you only need to modify them in one place.
+6. Implement page object in the 'cypress/pageObjects' directory.
+7. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
+8. create yaml file to run our script on github repository (remote).
    - build-test.yml: run test on github using default browser.
    - chorme-build-test.yml: run test on github using chrome browser.
    - firefox-build-test.yml: run test on github using firefox browser.
