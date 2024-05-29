@@ -32,10 +32,20 @@ Make sure you have the following dependencies installed:
 6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
 7. create yaml file to run our script in github repository (remote)
 8. Run the tests using one of the available commands:
+   - beacause of configuration in Package.json we can run test in this format.
    -there are various command as below:
-   - Run tests in interactive mode: `npm run cy:test -- --browser=chrome --headed`
-   - Run tests in headless mode: `npm run cy:test`
-   - Run tests in interactive mode for a specific spec: ` npm run cy:test -- --spec cypress/e2e/login.cy.js --headed`
+   
+   - Run tests in headless mode: 'npm run test'
+   - Run tests in interactive mode for a specific spec: ` npm run test -- --spec cypress/Integration/googleFormSubimssion_Test.cy.js --headed`
+   - Run test in interaction mode 'npm run test:headtest'
+   - Run test in headless mode for a specific spec:'npm run test:googleform'
+   - Run test in headless mode for chrome browser (specific spec):'npm run test:googleform_chrome'
+   - Run test in headless mode for firefox browser (specific spec):'test:googleform_firefox'
+   - Run test in headless mode for Edge browser (specific spec):'test:googleform_Egde'
+   - Run test in interactive mode for chrome browser(specfic spec):'npm run test:googleform_headtest_chrome'
+   - Run test in interactive mode for firefox browser(specfic spec):'npm run test:googleform_headtest_firefox'
+   - Run test in interactive mode for edge browser(specfic spec):'npm run test:googleform_headtest_Edge'
+     
 
 ## Configuration
 
@@ -44,8 +54,23 @@ Make sure you have the following dependencies installed:
      - he cypress.config.js file is used to configure settings for the Cypress test runner. It allows you to customize various aspects of your Cypress tests, such as the browser to use, the base URL of your 
        application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
                       -
-- `cypress/support/commands.js`: Custom commands and global configurations for Cypress.
-- `cypress/support/e2e.js`: Cypress e2e configuration file.
+- `cypress/support/commands.js`:
+    - Custom commands and global configurations for Cypress.
+    - The cypress/support/commands.js file in a Cypress project is used to extend Cypress' command set.
+    -  You can define custom commands or override existing commands here. This file is a good place to encapsulate  commonly used actions or assertions to make your test code more readable and maintainable.
+    - Custom commands can interact with your application in ways that are specific to your project, making your tests  more expressive and easier to write
+
+- `cypress/support/e2e.js`:
+      - Cypress e2e configuration file.
+      -e2e.js in the cypress/support directory is a common naming convention for a file that centralizes e2e testing configurations and utilities for Cypress tests, but its exact purpose and content can vary 
+       based on the specific needs of your project.
+
+
+
+
+
+
+
 
 ## Mochawesome HTML Report
 - Mochawesome is a custom reporter for Mocha that generates detailed and visually appealing HTML reports for your test results
