@@ -16,21 +16,17 @@
     "test:googleform_headtest_firefox": "npx cypress run --browser firefox --headed --spec cypress/integration/googleFormSubmission_Test.cy.js",
     "test:googleform_headtest_Edge": "npx cypress run --browser edge --headed --spec cypress/integration/googleFormSubmission_Test.cy.js"
 
-
-      
-      
-
-    
-
-    
-
   },
-  "repository": {
+  
+  "repository":
+  {
     "type": "git",
     "url": "git+https://github.com/SourabhShinde818/cypress-testing-framework.git"
   },
+  
   "author": "Sourabh Shinde",
   "license": "ISC",
+  
   "devDependencies": {
     "cypress": "^13.10.0",
     "cypress-mochawesome-reporter": "^3.8.2",
