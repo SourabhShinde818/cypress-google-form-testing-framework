@@ -1,6 +1,6 @@
 Automation Framework
 
-##Cypres-Mocha Framework
+##Cypress-Mocha Framework
 
 ##Features of Cypress-Mocha Framework
 - Mocha Test Runner: Mocha is a flexible and feature-rich JavaScript test framework that provides a clear and comprehensive interface for writing test cases and suites.
@@ -27,8 +27,10 @@ Make sure you have the following dependencies installed:
 5. Implement page object in the 'cypress/pageObjects' directory.
 6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
 7. create yaml file to run our script in github repository (remote)
-8. Run the tests using one of the available commands:
-9. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
+   - build-test.yml: run test on github with default browser
+   - 
+9. Run the tests using one of the available commands:
+10. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
    
 
    
