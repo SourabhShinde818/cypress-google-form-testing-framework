@@ -29,7 +29,7 @@
     "type": "git",
     "url": "git+https://github.com/SourabhShinde818/cypress-testing-framework.git"
   },
-  "author": "Sourabh",
+  "author": "Sourabh Shinde",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.10.0",

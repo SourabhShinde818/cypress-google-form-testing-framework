@@ -5,25 +5,25 @@ const formobj = new googleFormPage();
 
 
 
-var Fixdata;
+var formData;
 
-describe('test automation',()=>{
+describe('test automation',function(){
   before(function(){
     formobj.openURl()
     cy.fixture('googleFormTestData').then(function(testdata){
-       Fixdata=testdata
+      formData=testdata
     })
       
   })
-  it('Google Form Submission Test',()=>{
+  it('Google Form Submission Test',function(){
     
-     formobj.enterName(Fixdata.name)
+     formobj.enterName(formData.name)
      formobj.selectAge()
      formobj.selectExerciseFrequency()
      formobj.submitForm()
-     formobj.verifySubmissionSuccess().should('have.text',Fixdata.validationMessage)
+     formobj.verifySubmissionSuccess().should('have.text',formData.validationMessage)
      //form response is added in url
-     formobj.verifyURLchange().should('include',Fixdata.changedUrl)
+     formobj.verifyURLchange().should('include',formData.changedUrl)
 
 
   })
