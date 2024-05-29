@@ -1,4 +1,4 @@
-name: google form  firefox browser test automation
+name: google form  firefox browser test
 on: [push]
 jobs:
   cypress-run:
