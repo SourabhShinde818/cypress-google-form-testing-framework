@@ -26,16 +26,13 @@ Make sure you have the following dependencies installed:
 4. Configure your test steps by creating .cy.js files in the 'cypress/integration/' directory using mocha framework.
 5. Implement page object in the 'cypress/pageObjects' directory.
 6. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
-7. create yaml file to run our script on github repository (remote)
-   - build-test.yml: run test on github using default browser
-   - chorme-build-test.yml: run test on github using chrome browser
-   - firefox-build-test.yml: rub test on github using firefox browser
-   - 
-9. Run the tests using one of the available commands:
-10. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
-   
-
-   
+7. create yaml file to run our script on github repository (remote).
+   - build-test.yml: run test on github using default browser.
+   - chorme-build-test.yml: run test on github using chrome browser.
+   - firefox-build-test.yml: run test on github using firefox browser.
+   - edge-build-test.yml: rub test on github using edge browser.
+9. The cypress.config.js file is used to configure settings for the Cypress test runner. config base URL of your application, and file path configurations. You can also define environment variables, plugins, and other settings in this file.
+10.  Run the tests using one of the available commands:
    
    - Run tests in headless mode: 'npm run test'
    - Run tests in interactive mode for a specific spec: ` npm run test -- --spec cypress/Integration/googleFormSubimssion_Test.cy.js --headed`
@@ -53,9 +50,7 @@ Make sure you have the following dependencies installed:
    - It enhances code readability, reusability, and maintainability by encapsulating interactions with web pages into separate classes called Page Objects.
    - This pattern promotes cleaner test code and easier maintenance as applications evolve.
      
-
 ## Configuration
-
 -  cypress.config.js:
      - Cypress configuration file containing various settings for test execution.
      - The cypress.config.js file is used to configure settings for the Cypress test runner. It allows you to customize various aspects of your Cypress tests, such as the browser to use, the base URL of your 
@@ -81,7 +76,6 @@ Make sure you have the following dependencies installed:
      - Screenshots and Videos : Cypress can capture screenshots and videos during test runs, which are typically saved in the cypress/screenshots and cypress/videos directories, respectively.
      - Report Folder : By using Mochawesome-html-reporter we create standard report. it directly stores into a report folder
      - .github folder: created Yml files to run scprit on github.
-
 
 ## Mochawesome HTML Report
 - Mochawesome is a custom reporter for Mocha that generates detailed and visually appealing HTML reports for your test results
