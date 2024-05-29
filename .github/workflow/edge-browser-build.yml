@@ -1,4 +1,4 @@
-name: google form edge browser test automation
+name: google form edge browser test 
 on: [push]
 jobs:
   cypress-run:
