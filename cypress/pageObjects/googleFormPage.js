@@ -1,4 +1,5 @@
 import { locators } from "../../configfile/config"
+
 export class googleFormPage{
 
     openURl(){
@@ -8,6 +9,7 @@ export class googleFormPage{
     }
     
     enterName(Name){
+        
         cy.get(locators.googleForm.NameInput).type(Name)
         
     }
