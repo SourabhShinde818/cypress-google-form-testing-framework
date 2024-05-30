@@ -4,7 +4,7 @@ const formobj = new googleFormPage();
 
 var formData;
 
-describe('google form submission feature',function(){
+describe('Google Form Submission Feature',function(){
   
   before(function(){
     
@@ -16,7 +16,7 @@ describe('google form submission feature',function(){
       
   })
   
-  it('google form submission test',function(){
+  it('Google Form Submission Test',function(){
     
      formobj.enterName(formData.name)
      formobj.selectAge()
