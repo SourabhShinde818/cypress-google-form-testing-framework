@@ -23,7 +23,6 @@ describe('google form submission feature',function(){
      formobj.selectExerciseFrequency()
      formobj.submitForm()
      formobj.verifySubmissionSuccess().should('have.text',formData.validationMessage)
-     //form response is added in url
      formobj.verifyURLchange().should('include',formData.changedUrl)
 
   })
