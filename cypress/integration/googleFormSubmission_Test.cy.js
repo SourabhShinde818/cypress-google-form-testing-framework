@@ -4,7 +4,7 @@ const formobj = new googleFormPage();
 
 var formData;
 
-describe('test automation',function(){
+describe('google form submission feature',function(){
   
   before(function(){
     
