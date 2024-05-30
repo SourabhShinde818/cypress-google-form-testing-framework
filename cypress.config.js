@@ -7,16 +7,18 @@ module.exports = defineConfig({
     defaultCommandTimeout: 6000,
     
     "retries":{
+      
       "runMode":1, 
+      
     },
 
     e2e:{
     
     setupNodeEvents(on, config) {
       
-        require('cypress-mochawesome-reporter/plugin')(on);
+         require('cypress-mochawesome-reporter/plugin')(on);
 
-    },
+     },
       
      specPattern: 'cypress/integration/googleFormSubmission_Test.cy.js'
       
@@ -24,8 +26,8 @@ module.exports = defineConfig({
   
   env:{
     
-     URL:'https://docs.google.com',
+         URL:'https://docs.google.com',
     
-  }
+    }
   
 });
