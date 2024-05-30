@@ -28,7 +28,7 @@ Make sure you have the following dependencies installed:
 6. Implement page object in the 'cypress/pageObjects' directory.
 7. create test data file in the 'cypress/fixture/'directory and used in Test cases execution.
 8. create yaml file to run our script on github repository (remote).
-   - build-test.yml: run test on github using default browser.
+   - build-test.yml: run test on github using default browser (Electron).
    - chorme-build-test.yml: run test on github using chrome browser.
    - firefox-build-test.yml: run test on github using firefox browser.
    - edge-build-test.yml: rub test on github using edge browser.
