@@ -39,8 +39,8 @@ Make sure you have the following dependencies installed:
      - Run test in interaction mode 'npm run test:headtest'
      - Run test in headless mode for a specific spec:'npm run test:googleform'
      - Run test in headless mode for chrome browser (specific spec):'npm run test:googleform_chrome'
-     - Run test in headless mode for firefox browser (specific spec):'test:googleform_firefox'
-     - Run test in headless mode for Edge browser (specific spec):'test:googleform_Egde'
+     - Run test in headless mode for firefox browser (specific spec):'npm run test:googleform_firefox'
+     - Run test in headless mode for Edge browser (specific spec):'npm run test:googleform_Egde'
      - Run test in interactive mode for chrome browser(specfic spec):'npm run test:googleform_headtest_chrome'
      - Run test in interactive mode for firefox browser(specfic spec):'npm run test:googleform_headtest_firefox'
      - Run test in interactive mode for edge browser(specfic spec):'npm run test:googleform_headtest_Edge'
@@ -65,8 +65,7 @@ Make sure you have the following dependencies installed:
 - `cypress/support/e2e.js`:
       - Cypress e2e configuration file.
       -e2e.js in the cypress/support directory is a common naming convention for a file that centralizes e2e testing configurations and utilities for Cypress tests, but its 
-       exact purpose and content can vary 
-       based on the specific needs of your project.
+       exact purpose and content can vary based on the specific needs of your project.
 
   ## In a Cypress framework that uses Mocha as the test runner, the folder structure typically follows a common pattern. Here's a basic overview:
 
