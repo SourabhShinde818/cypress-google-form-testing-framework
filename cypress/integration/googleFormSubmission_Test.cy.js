@@ -16,7 +16,7 @@ describe('google form submission feature',function(){
       
   })
   
-  it('Google Form Submission Test',function(){
+  it('google form submission test',function(){
     
      formobj.enterName(formData.name)
      formobj.selectAge()
