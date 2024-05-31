@@ -2,7 +2,7 @@ import { googleFormPage } from "../pageObjects/googleFormPage"
 
 const formobj = new googleFormPage();
 
-var formData;
+let formData;
 
 describe('Google Form Submission Feature',function(){
   
