@@ -1,8 +1,8 @@
-Automation Framework
+# Automation Framework
 
-##Cypress-Mocha Framework
+## Cypress-Mocha Framework
 
-##Features of Cypress-Mocha Framework
+## Features of Cypress-Mocha Framework
 - Mocha Test Runner: Mocha is a flexible and feature-rich JavaScript test framework that provides a clear and comprehensive interface for writing test cases and suites.
 - Describe and It Blocks: Mocha uses describe and it blocks to organize tests into logical groups and define individual test cases, making it easy to manage and understand test suites.
 - Hooks: Mocha provides before, after, beforeEach, and afterEach hooks that allow you to set up and tear down test environments, ensuring tests run in a clean state.
