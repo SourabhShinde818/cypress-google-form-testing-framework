@@ -18,7 +18,7 @@ Make sure you have the following dependencies installed:
 - Node.js (version 18 or higher)
 - NPM (Node Package Manager)
 
-##Steps
+## Steps
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
